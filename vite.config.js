@@ -35,8 +35,8 @@ const manifest = {
   "description": WEBMANIFEST_DESCRIPTION || "a startpage for your server and / or new tab page",
   "icons": [
     {
-      "src": "icon.svg",
-      "type": "image/svg",
+      "src": "icon-512.png",
+      "type": "image/png",
       "sizes": "512x512"
     }
   ],
