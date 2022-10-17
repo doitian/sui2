@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-  <title>SUI2</title>
+  <title>Launch</title>
   <meta charset="utf-8">
   <meta name="description" content="a startpage for your server and / or new tab page">
   <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
-  <link rel="shortcut icon" href="/icon-512.png" type="image/png">
+  <link rel="shortcut icon" href="/icon.svg" type="image/svg">
   <link rel="stylesheet" href="/scss/styles.scss" />
 </head>
 
@@ -67,7 +67,7 @@
             </div>
             <div class="apps_text">
               <span class="name">{{name}}</span>
-              <span class="domain">{{domain url}}</span>
+              <span class="domain">{{#if hint}}{{hint}}{{else}}{{domain url}}{{/if}}</span>
             </div>
           </a>
         </div>
@@ -76,6 +76,7 @@
     </section>
     {{/apps}}
 
+    {{#if bookmarks.length}}
     <section id="links">
       <h3>Bookmarks</h3>
       <div id="links_loop">
@@ -89,6 +90,7 @@
         {{/bookmarks}}
       </div>
     </section>
+    {{/if}}
   </main>
 
   <div id="modal_init">

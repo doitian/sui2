@@ -40,7 +40,8 @@
           "icon": "router-wireless"
         },
         {
-          "name": "Home Sync (thisisunsafe)",
+          "name": "Home Sync",
+          "hint": "thisisunsafe",
           "url": "https://192.168.2.5:14860/",
           "icon": "folder-sync"
         }

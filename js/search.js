@@ -81,6 +81,9 @@ function handleKeyPress(e) {
       // e.preventDefault();
       // e.stopPropagation();
       // use default behavior
+      if (key == 13) {
+          updateKeyword(27)
+      }
       return
   } else {
     const oldKeyword = store.keyword
