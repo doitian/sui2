@@ -1,17 +1,15 @@
-name: GitHub Pages
+name: Upload Artifact
 
 on:
   push:
     branches:
-      - master
+      - personal
     paths-ignore:
       - 'README.md'
 
 jobs:
-  deploy:
+  upload-artifact:
     runs-on: ubuntu-20.04
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - uses: actions/checkout@v3
 
@@ -43,9 +41,8 @@ jobs:
         env:
           WEBMANIFEST_SCOPE: /sui2/
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/master' }}
+      - name: Upload
+        uses: actions/upload-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          name: dist
+          path: dist/

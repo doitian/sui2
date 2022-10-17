@@ -1,0 +1,61 @@
+{
+  "apps": [
+    {
+      "name": "Media Center",
+      "items": [
+        {
+          "name": "Movies & TV",
+          "url": "http://192.168.2.5:8096/",
+          "icon": "emby"
+        },
+        {
+          "name": "Photos",
+          "url": "http://192.168.2.5:5000/apps/qumagie",
+          "icon": "image"
+        }
+      ]
+    },
+    {
+      "name": "Tools",
+      "items": [
+        {
+          "name": "Transmission",
+          "url": "http://192.168.2.5:9091/transmission/web/",
+          "icon": "download-circle-outline"
+        },
+        { "name": "NAS", "url": "http://192.168.2.5:5000/", "icon": "nas" },
+        {
+          "name": "Clash",
+          "url": "http://192.168.2.6:9090/ui",
+          "icon": "airplane"
+        },
+        {
+          "name": "Container",
+          "url": "http://192.168.2.5:5000/container-station/#/container",
+          "icon": "docker"
+        },
+        {
+          "name": "Router",
+          "url": "http://192.168.2.1",
+          "icon": "router-wireless"
+        },
+        {
+          "name": "Home Sync (thisisunsafe)",
+          "url": "https://192.168.2.5:14860/",
+          "icon": "folder-sync"
+        }
+      ]
+    }
+  ],
+  "bookmarks": [
+    {
+      "category": "Download",
+      "links": [
+        {
+          "name": "PT M-Team",
+          "url": "https://kp.m-team.cc/"
+        }
+      ]
+    }
+  ]
+}
