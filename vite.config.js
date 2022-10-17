@@ -30,13 +30,13 @@ try {
 }
 
 const manifest = {
-  "name": WEBMANIFEST_NAME || "SUI2",
-  "short_name": WEBMANIFEST_SHORT_NAME || "sui2",
+  "name": WEBMANIFEST_NAME || "Launch",
+  "short_name": WEBMANIFEST_SHORT_NAME || "launch",
   "description": WEBMANIFEST_DESCRIPTION || "a startpage for your server and / or new tab page",
   "icons": [
     {
-      "src": "icon-512.png",
-      "type": "image/png",
+      "src": "icon.svg",
+      "type": "image/svg",
       "sizes": "512x512"
     }
   ],
